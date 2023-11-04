@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="marksheet.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Marksheet</title>
+</head>
+<body>
+    <div class="topbar">
+        <img style="width:70px; height:70px" src="assets\logo.png" alt="logo"/>
+        <h3 style="margin-top:15px ;">Central Board Of Secondary Education</h3>
+        <img style="width: 70px; height:70px"  src="assets\tnlogo.jpg" alt="logo"/>
+    </div>
+    <br/>
+    <div class="subTopbar">
+        <h4>Examinations Results</h4>
+        <h4>All India Senior School Certificate Examination(AISSCE)2022</h4>
+    </div>
+    <div class="main">
+        <label for="regno" class="marks" style="margin-right:50px ;">Registration number</label>  
+        <input type="number" min="0" max="100" id="reg" class="field"/>
+        <br/>
+        <label for="name" class="marks" style="margin-right:157px ;">Name</label>
+        <input type="txt" id="nam" class="field" onkeydown="return /[a-zA-Z\ ]/i.test(event.key)"/>
+        <br/>
+        <label for="sch" class="marks"  style="margin-right:103px ;">School Name</label>
+        <input type="sch" id="sch" class="field" onkeydown="return /[a-zA-Z\ ]/i.test(event.key)"/>
+        <br/><br/>
+        <h4>Enter your Marks</h4>
+        <label for="eng" class="marks" style="margin-right: 95px;"> English </label>
+        <input type="number" id="eng" class="field"/>
+        <br/>
+        <label for="phy" class="marks" style="margin-right: 95px;"> Physics </label>
+        <input type="number" id="phy" class="field"/>
+        <br/>
+        <label for="maths" class="marks" style="margin-right: 98px;"> Maths </label>
+        <input type="number" id="maths" class="field"/>
+        <br/>
+        <label for="chem" class="marks" style="margin-right: 70px;">Chemistry</label>
+        <input type="number" id="chem" class="field"/>
+        <br/>
+        <label for="comp" class="marks" style="margin-right: 70px;">Computer</label>
+        <input type="number" id="comp" class="field"/>
+        <br/>
+        <button onclick="calc()" class="button1">SUBMIT</button>
+    </div>
+    <br/>
+    <div id="details" class="details">
+        
+    </div>
+    <div id="tabular" class="tabular">
+        
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
